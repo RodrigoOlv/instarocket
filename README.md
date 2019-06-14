@@ -1,2 +1,11 @@
-# projeto-semana-omnistack
-projeto em desenvolvimento na semana omni stack pela rocketseat
+# instarocket
+Developed with Rocketseat during OmniStack 7.0 Week. Using NodeJS, ReactJS and ReactNative.
+
+Run Server:
+- yarn dev
+
+Run Web:
+-yarn start
+
+Run Mobile:
+-react-native run-android
