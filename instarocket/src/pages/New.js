@@ -48,9 +48,9 @@ export default class New extends Component {
           name: `${prefix}.${ext}`
         };
 
-        this.setState({ preview, image });
+        this.setState({ preview: image });
       }
-    })
+    });
   }
 
   handleSubmit = async () => {
@@ -70,7 +70,7 @@ export default class New extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.selectButton} onPress={() => this.handleSelectImage}>
+        <TouchableOpacity style={styles.selectButton} onPress={() => this.handleSelectImage()}>
           <Text style={styles.selectButtonText}>Selecionar imagem</Text>
         </TouchableOpacity>
 
@@ -93,7 +93,7 @@ export default class New extends Component {
           placeholder='Local da foto'
           placeholderTextColor='#999'
           value={this.state.place}
-          onChangeText={author => this.setState({place})}
+          onChangeText={place => this.setState({place})}
         />
 
         <TextInput
@@ -103,7 +103,7 @@ export default class New extends Component {
           placeholder='Descrição'
           placeholderTextColor='#999'
           value={this.state.description}
-          onChangeText={author => this.setState({description})}
+          onChangeText={description => this.setState({description})}
         />
 
         <TextInput
@@ -113,10 +113,10 @@ export default class New extends Component {
           placeholder='Hashtags'
           placeholderTextColor='#999'
           value={this.state.hashtags}
-          onChangeText={author => this.setState({hashtags})}
+          onChangeText={hashtags => this.setState({hashtags})}
         />
 
-        <TouchableOpacity style={styles.shareButton} onPress={() => this.handleSubmit}>
+        <TouchableOpacity style={styles.shareButton} onPress={() => this.handleSubmit()}>
           <Text style={styles.shareButtonText}>Compartilhar</Text>
         </TouchableOpacity>
 
