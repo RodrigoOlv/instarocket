@@ -5,7 +5,7 @@ Run Server:
 - yarn dev
 
 Run Web:
--yarn start
+- yarn start
 
 Run Mobile:
--react-native run-android
+- react-native run-android
