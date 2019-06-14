@@ -12,7 +12,7 @@ class New extends Component {
         hashtags: ''
     }
 
-    handleSubmite = async e => {
+    handleSubmit = async e => {
         e.preventDefault();
 
         const data = new FormData();
@@ -38,7 +38,7 @@ class New extends Component {
 
     render() {
         return (
-            <form id="new-post" onSubmit={this.handleSubmite}>
+            <form id="new-post" onSubmit={this.handleSubmit}>
                 <input type="file" onChange={this.handleImageChange}></input>
 
                 <input
