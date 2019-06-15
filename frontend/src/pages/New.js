@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import api from '../services/api';
 
-import './New.css';
 import { NewPost }  from './NewPostStyles';
 
 class New extends Component {

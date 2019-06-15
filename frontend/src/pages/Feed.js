@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import api from '../services/api';
 import io from 'socket.io-client';
 
-import './Feed.css';
 import { PostList } from './FeedListStyles';
 
 import more from '../assets/more.svg';
