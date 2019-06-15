@@ -48,7 +48,7 @@ export default class New extends Component {
           name: `${prefix}.${ext}`
         };
 
-        this.setState({ preview: image });
+        this.setState({ preview, image });
       }
     });
   }
